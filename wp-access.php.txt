@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_COOKIE} !^.*wp\-access=2917998723.*$ [NC]
+RewriteRule wp-login.php - [F]
+</IfModule>
